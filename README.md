@@ -2,13 +2,13 @@
 
 ## Contents
 - [Installation](#installation)
-- [Demo](#Demo)
-  - [With independent draft models](#With-independent-draft-models)
-  - [With EAGLE draft models](#With-EAGLE-draft-models)
-- [Evaluation on datasets](#Evaluation-on-datasets)
-  - [With independent draft models](#With-independent-draft-models)
-  - [With EAGLE draft models](#With-EAGLE-draft-models)
-- [Citation](#citation)
+- [Evaluation](#evaluation)
+  - [Baseline](#baseline)
+  - [TRAG](#trag)
+- [Evaluation with LLM-Lingua2](#evaluation-with-llm-lingua2)
+  - [Baseline](#baseline)
+  - [TRAG](#trag)
+- [Calculate Scores](#calculate-scores)
 
 
 ## Installation
