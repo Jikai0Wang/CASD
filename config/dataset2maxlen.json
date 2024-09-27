@@ -1,0 +1,10 @@
+{
+    "nq": 1024,
+    "hotpotqa": 32,
+    "2wikimqa": 32,
+    "gov_report": 512,
+    "multi_news": 512,
+    "triviaqa": 32,
+    "lcc": 64,
+    "repobench-p": 64
+}
