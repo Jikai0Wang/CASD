@@ -1,4 +1,4 @@
-# TRAG: Token-level Retrieval-augmented Generation Through Speculative Decoding
+# CASD: Enhancing Generation Accuracy via Context-Aware Speculative Decoding.
 
 ## Contents
 - [Installation](#installation)
