@@ -1,5 +1,6 @@
 torch==2.0.1
-tansformers==4.44.2
+tansformers
+numpy==1.26.1
 llmlingua==0.2.2
 fschat[model_worker,webui]
 maturin==0.12
@@ -10,3 +11,6 @@ anthropic
 sentencepiece
 protobuf
 shortuuid
+jieba
+fuzzywuzzy
+rouge

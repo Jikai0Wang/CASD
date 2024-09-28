@@ -120,11 +120,13 @@ if __name__ == '__main__':
     dataset2prompt = json.load(open("config/dataset2prompt.json", "r"))
     dataset2maxlen = json.load(open("config/dataset2maxlen.json", "r"))
 
-    output_path="pred_rest_"+str(threshold)
+    output_path="pred_casd_"+str(threshold)
     if k>0:
         output_path=output_path+f"_top{k}"
 
     model, tokenizer = load_model_and_tokenizer(args.model)
+    if not os.path.exists("tmp"):
+        os.makedirs("tmp")
     for dataset in datasets:
         print(f"Running {dataset} ...")
         data=[]
@@ -135,6 +137,7 @@ if __name__ == '__main__':
 
         if not os.path.exists(f"{output_path}"):
             os.makedirs(f"{output_path}")
+
         out_path = f"{output_path}/{dataset}.jsonl"
 
         prompt_format = dataset2prompt[dataset]

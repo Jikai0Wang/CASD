@@ -123,11 +123,13 @@ if __name__ == '__main__':
     dataset2prompt = json.load(open("config/dataset2prompt.json", "r"))
     dataset2maxlen = json.load(open("config/dataset2maxlen.json", "r"))
 
-    output_path=f"pred_lingua_{args.compress_rate}_trag_"+str(threshold)
+    output_path=f"pred_lingua_{args.compress_rate}_casd_"+str(threshold)
     if k>0:
         output_path=output_path+f"_top{k}"
 
     model, tokenizer = load_model_and_tokenizer(args.model)
+    if not os.path.exists("tmp"):
+        os.makedirs("tmp")
     for dataset in datasets:
         print(f"Running {dataset} ...")
         data=[]
